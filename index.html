@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QAForce - QA Engineers On Demand</title>
+  <title>GetQA - QA Engineers On Demand</title>
   <meta name="description" content="Get access to vetted, experienced QA professionals ready to integrate with your team. No hiring headaches. No long-term commitments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -118,10 +118,10 @@
     <!-- Logo -->
     <a href="/" class="absolute top-6 left-4 sm:top-8 sm:left-8 z-10 inline-flex items-center gap-2 group">
       <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary flex items-center justify-center glow-sm transition-all duration-300 group-hover:glow">
-        <span class="text-white font-display font-bold text-xl sm:text-2xl">Q</span>
+        <span class="text-white font-display font-bold text-xl sm:text-2xl">G</span>
       </div>
       <span class="font-display font-bold text-xl sm:text-2xl text-slate-900">
-        QA<span class="text-gradient">Force</span>
+        Get<span class="text-gradient">QA</span>
       </span>
     </a>
 
@@ -149,13 +149,13 @@
 
         <!-- CTA Buttons -->
         <div class="animate-fade-up-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 sm:mb-16">
-          <a href="https://wa.me/1234567890" target="_blank" class="btn-hero w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-10 rounded-lg text-white text-lg font-bold">
+          <a href="#" id="whatsapp-btn" class="btn-hero w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-10 rounded-lg text-white text-lg font-bold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
             </svg>
             Chat on WhatsApp
           </a>
-          <a href="https://calendly.com" target="_blank" class="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-10 rounded-lg text-slate-800 text-lg font-bold bg-white">
+          <a href="https://calendly.com/qaondemand" target="_blank" class="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-10 rounded-lg text-slate-800 text-lg font-bold bg-white">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg>
@@ -187,6 +187,22 @@
       </div>
     </div>
   </section>
+
+  <script>
+    // Obfuscated phone number - split into parts to avoid bot scraping
+    document.addEventListener('DOMContentLoaded', function() {
+      const waBtn = document.getElementById('whatsapp-btn');
+      if (waBtn) {
+        waBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Replace these parts with your actual phone number (country code + number)
+          const parts = ['1', '551', '358', '2726']; // +15513582726
+          const number = parts.join('');
+          window.open('https://wa.me/' + number, '_blank');
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
